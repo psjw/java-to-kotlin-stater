@@ -1,4 +1,7 @@
 package com.lannstark.lec10
 
-class Animal {
+abstract class Animal(protected val species: String,
+                      protected open val legCount: Int) {
+
+    abstract fun move()
 }
